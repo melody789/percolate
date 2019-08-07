@@ -28,7 +28,7 @@ generate_board_mat <- function(n =5,p=0.25 ){
 #'
 #' @return true or error
 #' @export
-#'
+#' @import assertthat
 #' @examples is_valid(c(matrix(c(1,2,3,4), nrow = 2)))
 #' is_valid(generate_board_mat())
 #' is_valid(generate_board_mat(n=1))
