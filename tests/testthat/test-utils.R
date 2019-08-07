@@ -1,4 +1,4 @@
-context("test board fn")
+context("test board generate fn")
 #1
 test_that("generate_board_mat() works with default value", {
   res <- generate_board_mat()
