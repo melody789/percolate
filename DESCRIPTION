@@ -12,8 +12,9 @@ License: What license it uses
 Encoding: UTF-8
 LazyData: true
 Suggests: 
-    testthat
+    testthat (>= 2.1.0)
 Imports: 
     assertthat,
     ggplot2,
     tidyr
+RoxygenNote: 6.1.1
