@@ -6,7 +6,7 @@
 #'
 #' @return a new borad
 #' @export
-#'
+#' @import assertthat
 #' @examples generate_board_mat(5,0.25)
 #' generate_board_mat(n = 8, p = 0.75)
 #' generate_board_mat(n = 8, p = 0)

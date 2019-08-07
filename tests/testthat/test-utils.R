@@ -42,7 +42,7 @@ test_that("is_valid() errors for non integer", {
 
 #2
 test_that("is_valid() errors for not a square matrix", {
-  expect_error(is_valid(matrix(c(1,2,0,0), nrow = 3)))
+  expect_error(is_valid(matrix(c(1,2,0,0,0,0), nrow = 3)))
 })
 #3
 test_that("is_valid() errors for only has 0,1,2", {

@@ -2,3 +2,4 @@
 
 export(generate_board_mat)
 export(is_valid)
+import(assertthat)
