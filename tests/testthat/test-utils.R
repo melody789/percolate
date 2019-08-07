@@ -48,3 +48,45 @@ test_that("is_valid() errors for not a square matrix", {
 test_that("is_valid() errors for only has 0,1,2", {
   expect_error(is_valid(matrix(0, 1, 3)))
 })
+
+
+
+
+
+test_that("check read_board function with loaded data", {
+  load(url("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolate_test.Rdata"))
+  res <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test.txt")
+  expect_equal(identical(attributes(board_list), attributes(res)), TRUE)
+})
+
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test1.txt")
+  expect_equal(list(NA), boards)
+})
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test2.txt")
+  expect_equal(list(NA), boards)
+})
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test3.txt")
+  #expect_warning(lst_boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test3.txt"))
+  expect_equal(list(NA), boards)
+})
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test4.txt")
+  expect_equal(list(NA), boards)
+})
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test5.txt")
+  expect_equal(list(NA), boards)
+})
+
+test_that("read_boards() works", {
+  boards <- read_boards("https://raw.githubusercontent.com/benjaminleroy/36-350-summer-data/master/Week5/percolation_write_test6.txt")
+  expect_equal(list(NA), boards)
+})
