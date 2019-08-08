@@ -1,3 +1,12 @@
+#' percoalte function
+#'
+#' @param x board
+#' @param ...
+#'
+#' @return a borad
+#' @export
+#'
+#' @examples percolate(myboard())
 percolate <- function(x, ...) {
   UseMethod("percolate")
 }
