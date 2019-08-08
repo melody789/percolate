@@ -18,8 +18,8 @@ board <- function(mat = NULL, n =5 , p=0.25){
   else {
     mat2 <- generate_board_mat(n,p)
     object <- mat2
-    attr(object, "trails") <- n
-    attr(object, "prob") <- p
+    attr(object, "n") <- n
+    attr(object, "p") <- p
   }
   class(object) <- c("matrix","board")
   object
